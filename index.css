@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+#info-m a{
+    display: none;
+
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+}
+#menu{
+    font-size: 50px;
+    display: none;
+}
+#cancel{
+    font-size: 40px;
+    display: none;
+}
+
+#info{
+    display: flex;
+    padding: 15px;
+    gap: 50px;
+}
+button{
+    width: 10vw;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5pc;
+    border: 0;
+}
+
+#intro{
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+#intro-1{
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#images{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#images img{
+    width: 20%;
+    animation: img 5s infinite;
+}
+
+@keyframes img{
+    0%{
+        transform: scaleX(0.25);
+    }
+    50%{
+        transform: scaleX(1.0);
+    }
+    100%{
+        transform: scaleX(1.5);
+    }
+}
+#buttons{
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+#buttons button{
+    width: 25%;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    border: 2 solid white;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+}
+#buttons #but{
+    width: 25%;
+    padding: 24px;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+}
+
+#buttons button:hover{
+    background-color: black;
+    color: white;
+}
+
+#buttons #but:hover{
+    background-color: rgba(0, 0, 255, 0.438);
+    color: black;
+}
+
+
+/* -------------------------RESPONSIVENESS------------------------- */
+
+@media(max-width: 768px){
+    #info{
+        display: none;
+    }
+
+    #info-m a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.589);
+        border-radius: 50px;
+    }
+    #info-m a:hover{
+        background-color: black;
+    }
+    header button{
+        display: none;
+    }
+    header h1{
+        margin-left: 10px;
+    }
+    #menu{
+        font-size: 40px;
+        display: block;
+        padding-left: 110px;
+    }
+    #cancel{
+        font-size: 40px;
+        display: none;
+        padding-left: 110px;
+    }
+
+    #intro{
+        width: 80vw;
+        margin: auto;
+        margin-top: 10px;
+        padding: 60px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        display: none;
+    
+    }
+    #intro-1{
+        display: block;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    #images{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #images img{
+        width: 80%;
+        animation: img 5s infinite;
+    }
+    #buttons{
+        margin-top: 8%;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    
+    }
+    
+    #buttons button{
+        width: 75%;
+        padding: 25px;
+        background-color: rgba(0, 0, 0, 0.589);
+        color: white;
+        border: 2 solid white;
+        border: 0;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    #buttons #but{
+        width: 75%;
+        padding: 24px;
+        background-color: black;
+        color: white;
+        border: 0;
+        border-radius: 20px;
+    }
+    footer{
+        padding: 50px;
+    }
+    foot{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.589);
+        color: white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    footer p{
+        font-size: 18px;
+    }
+    
+    #ft-1{
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 30px;
+    }
+    footer h2{
+        color: black;
+    }
+}
